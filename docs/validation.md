@@ -5,6 +5,10 @@
 - Accent #E15EFF, fond clair #F6DCFF, survol #D659F7, communs au site et à
   l’admin. Contrastes avec le texte bleu nuit : 5,12:1, 11,73:1 et 4,69:1.
 - Lint, TypeScript, builds Next.js des deux interfaces et build Storybook réussis.
+- Le premier contrôle GitHub a révélé l’absence de `next-env.d.ts` dans un
+  checkout neuf. `typecheck` génère désormais les types avec `next typegen`
+  avant `tsc --noEmit` ; vérification réussie dans une copie sans `.next` ni
+  `next-env.d.ts` préexistants. Les fichiers générés restent ignorés par Git.
 - 23 scénarios publics passent dans Brave, avec trois exclusions selon
   l’appareil ; deux scénarios admin couvrent douze captures desktop/mobile.
 - Les 38 stories se rendent ; interactions et accessibilité du dialogue validées.
