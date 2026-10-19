@@ -1,26 +1,16 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html { scroll-behavior: smooth; scroll-padding-top: 96px; scrollbar-gutter: stable; }
+body { margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+button, a { -webkit-tap-highlight-color: transparent; }
+.skip-link { position: absolute; top: -100px; left: 0; background: var(--mui-palette-background-default); padding: 12px; z-index: 20; }
+.skip-link:focus-visible { top: 12px; }
+::selection { color: var(--mui-palette-primary-dark); background: var(--mui-palette-secondary-main); }
+*:focus-visible { outline: 3px solid var(--mui-palette-primary-main); outline-offset: 4px; }
+* { scrollbar-color: var(--mui-palette-primary-light) var(--mui-palette-background-default); scrollbar-width: thin; }
+.product-journey[data-running="true"]:is([data-phase="scheduling"], [data-phase="publishing"]) .journey-traveller { will-change: transform; }
+.product-journey[data-running="true"] [data-feed-existing] { will-change: transform; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .product-journey .journey-traveller { display: none !important; }
 }

@@ -1,0 +1,21 @@
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
+import Box from '@mui/material/Box';
+import { DraftPreview } from '@/components/product/DraftPreview';
+import { CalendarPreview } from '@/components/product/CalendarPreview';
+import { PhonePreview } from '@/components/product/PhonePreview';
+import { ProductStage } from '@/components/product/ProductStage';
+import { ModerationDemo } from '@/components/product/ModerationDemo';
+import { ProductJourney } from '@/components/sections/ProductJourney';
+
+const meta = { title: 'Produit/Démonstrations', parameters: { docs: { description: { component: 'Compositions MUI : import, calendrier au jour courant et insertion dans une grille 4:5. Le parcours propose lecture, pause, relecture et étapes directes. Compte Tournesol, compteurs et badge entièrement fictifs. La modération est interactive ; toutes ces démonstrations restent locales au navigateur.' } } } } satisfies Meta;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export const Brouillon: Story = { render: () => <Box role="img" aria-label="Démonstration de brouillon" sx={{ width: 305, m: 4 }}><Box aria-hidden="true"><DraftPreview /></Box></Box> };
+export const Calendrier: Story = { render: () => <Box role="img" aria-label="Démonstration de calendrier" sx={{ maxWidth: 694, m: 4 }}><Box aria-hidden="true"><CalendarPreview /></Box></Box> };
+export const ProfilInstagram: Story = { render: () => <Box role="img" aria-label="Simulation du profil Instagram" sx={{ width: 283, m: 4 }}><Box aria-hidden="true"><PhonePreview /></Box></Box> };
+export const Parcours: Story = { render: () => <Box sx={{ maxWidth: 1312, m: 4 }}><ProductStage /></Box> };
+export const Moderation: Story = { render: () => <Box sx={{ maxWidth: 700, m: 3 }}><ModerationDemo /></Box> };
+export const TousMasques: Story = { render: () => <Box sx={{ maxWidth: 700, m: 3 }}><ModerationDemo initialHidden={['lea','alex','sam']} /></Box> };
+export const ProfilAvantInsertion: Story = { render: () => <Box role="img" aria-label="Profil Tournesol avant la nouvelle publication, compte fictif" sx={{ width: 283, m: 4 }}><Box aria-hidden="true"><PhonePreview published={false} /></Box></Box> };
+export const CalendrierSixSemaines: Story = { render: () => <Box role="img" aria-label="Calendrier de mars, six semaines" sx={{ maxWidth: 694, m: 4 }}><Box aria-hidden="true"><CalendarPreview date="2026-03-31" /></Box></Box> };
+export const ParcoursAnime: Story = { parameters: { layout: 'fullscreen' }, render: () => <Box sx={{ py: 4 }}><ProductJourney /></Box> };

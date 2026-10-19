@@ -1,0 +1,24 @@
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
+import Home from '@/app/page';
+import NotFound from '@/app/not-found';
+import { SiteHeader } from '@/components/layout/SiteHeader';
+import { SiteFooter } from '@/components/layout/SiteFooter';
+import { Hero } from '@/components/sections/Hero';
+import { ProductJourney } from '@/components/sections/ProductJourney';
+import { ModerationSection } from '@/components/sections/ModerationSection';
+import { ControlSection } from '@/components/sections/ControlSection';
+import { StudioSection } from '@/components/sections/StudioSection';
+import { ClosingSection } from '@/components/sections/ClosingSection';
+
+const meta = { title: 'Pages/Présentation', parameters: { layout: 'fullscreen' } } satisfies Meta;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export const Accueil: Story = { render: () => <Home /> };
+export const PageIntrouvable: Story = { render: () => <NotFound /> };
+export const Navigation: Story = { render: () => <><SiteHeader /><SiteFooter /></> };
+export const Introduction: Story = { render: () => <Hero /> };
+export const RecitPublication: Story = { render: () => <ProductJourney /> };
+export const Echanges: Story = { render: () => <ModerationSection /> };
+export const Questions: Story = { render: () => <ControlSection /> };
+export const Studio: Story = { render: () => <StudioSection /> };
+export const Conclusion: Story = { render: () => <ClosingSection /> };

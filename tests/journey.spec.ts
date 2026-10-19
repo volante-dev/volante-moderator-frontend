@@ -1,0 +1,151 @@
+import { test, expect } from '@playwright/test';
+import { buildCalendar } from '../components/product/demo';
+
+for (const [date, rows, days, label] of [['2027-02-01', 4, 28, 'février 2027'], ['2026-03-31', 6, 31, 'mars 2026'], ['2028-02-29', 5, 29, 'février 2028'], ['2026-12-31', 5, 31, 'décembre 2026']] as const) {
+  test(`Calendar places the current day correctly at month boundaries: ${date}`, () => {
+    const month = buildCalendar(date);
+    expect(month.label).toBe(label); expect(month.rows).toBe(rows);
+    expect(month.days.filter(day => !day.outside)).toHaveLength(days);
+    expect(month.days.filter(day => day.selected).map(day => day.iso)).toEqual([date]);
+    expect(new Date(`${month.days[0].iso}T12:00:00Z`).getUTCDay()).toBe(1);
+    expect(month.days.filter(day => day.post).length).toBeGreaterThanOrEqual(6);
+    expect(month.days.find(day => day.selected)?.post).toBeNull();
+  });
+}
+
+test('The demo imports, schedules today and inserts a unique 4:5 photo, also in short Brave windows', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name === 'mobile', 'Mobile playback is covered separately.');
+  await page.setViewportSize({ width: 1280, height: 650 });
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.clock.install({ time: new Date('2026-10-19T12:00:00Z') });
+  await page.goto('/');
+  const journey = page.locator('#produit');
+  await journey.scrollIntoViewIfNeeded();
+  await expect(journey).toHaveAttribute('data-running', 'true');
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'true');
+  const heldY = await page.evaluate(() => window.scrollY);
+  await page.mouse.wheel(0, 600);
+  await page.waitForTimeout(150);
+  expect(await page.evaluate(() => window.scrollY)).toBe(heldY);
+  const scene = await page.locator('.journey-frame').boundingBox();
+  expect(scene!.y).toBeGreaterThanOrEqual(0);
+  expect(scene!.y + scene!.height).toBeLessThanOrEqual(650);
+  await expect(journey).toHaveAttribute('data-phase', 'uploading');
+  const desktop = page.locator('.journey-desktop');
+  await expect(desktop.locator('[data-feed-new]')).toHaveCSS('opacity', '0');
+  await expect(desktop.locator('[data-post-count="true"]')).toHaveText('128');
+  await expect(desktop.locator('[data-calendar-date]')).toHaveAttribute('data-calendar-date', '2026-10-19');
+  await expect(desktop.locator('[data-today]')).toContainText('19');
+  expect(await desktop.locator('[data-calendar-fiction]').count()).toBeGreaterThan(5);
+  await page.getByRole('button', { name: 'Mettre en pause' }).click();
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'false');
+  await expect(page.locator('html')).not.toHaveCSS('overflow', 'hidden');
+  const mask = await journey.evaluate(element => (element as HTMLElement).style.getPropertyValue('--upload-mask'));
+  await page.waitForTimeout(250);
+  expect(await journey.evaluate(element => (element as HTMLElement).style.getPropertyValue('--upload-mask'))).toBe(mask);
+  await page.getByRole('button', { name: 'Lire le parcours' }).click();
+  await expect(journey).toHaveAttribute('data-phase', 'scheduled', { timeout: 6500 });
+  await expect(desktop.locator('.calendar-post')).toHaveCSS('opacity', '1');
+  await expect(journey).toHaveAttribute('data-phase', 'published', { timeout: 6500 });
+  await expect(journey).toHaveAttribute('data-running', 'false');
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'false');
+  await page.mouse.wheel(0, 350);
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(heldY + 100);
+  await journey.scrollIntoViewIfNeeded();
+  await expect(journey).toHaveAttribute('data-running', 'false');
+  await expect(desktop.locator('[data-feed-new]')).toHaveCSS('opacity', '1');
+  await expect(desktop.locator('[data-feed-new]')).toHaveCount(1);
+  await expect(desktop.locator('[data-post-count="true"]')).toHaveText('129');
+  await expect(desktop.locator('[data-feed-existing="0"]')).not.toHaveCSS('transform', 'none');
+  const rect = await desktop.locator('[data-feed-new]').boundingBox();
+  expect(rect!.width / rect!.height).toBeCloseTo(4 / 5, 2);
+  await page.getByRole('button', { name: 'Rejouer le parcours' }).click();
+  await expect(journey).toHaveAttribute('data-phase', 'ready');
+  await expect(desktop.locator('[data-post-count="true"]')).toHaveText('128');
+  await expect(desktop.locator('[data-feed-new]')).toHaveCSS('opacity', '0');
+});
+
+test('Reduced motion keeps meaningful steps and updates the calendar after midnight', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.clock.install({ time: new Date('2026-12-31T23:59:50') });
+  await page.goto('/');
+  await expect(page.locator('#produit')).toHaveAttribute('data-reduced', 'true');
+  await expect(page.locator('#produit')).toHaveAttribute('data-phase', 'published');
+  await expect(page.locator('html')).not.toHaveCSS('overflow', 'hidden');
+  await expect(page.getByRole('button', { name: 'Rejouer le parcours' })).toHaveCount(0);
+  await expect(page.locator('[data-calendar-date]').first()).toHaveAttribute('data-calendar-date', '2026-12-31');
+  await page.clock.fastForward(35_000);
+  await expect(page.locator('[data-calendar-date]').first()).toHaveAttribute('data-calendar-date', '2027-01-01');
+  await expect(page.locator('[data-today]').first()).toContainText('1');
+});
+
+test('Mobile can play and choose a step without automatic motion', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'mobile', 'Mobile controls.');
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/');
+  const journey = page.locator('#produit');
+  await journey.scrollIntoViewIfNeeded();
+  await expect(journey).toHaveAttribute('data-running', 'false');
+  await page.getByRole('button', { name: 'Lire le parcours' }).click();
+  await expect(journey).toHaveAttribute('data-phase', 'uploading');
+  await expect(page.locator('html')).not.toHaveCSS('overflow', 'hidden');
+  await page.getByRole('tab', { name: 'Calendrier', exact: true }).click();
+  await expect(journey).toHaveAttribute('data-running', 'false');
+  await expect(journey).toHaveAttribute('data-phase', 'scheduled');
+  await page.getByRole('tab', { name: 'Aperçu', exact: true }).click();
+  await expect(page.getByRole('tabpanel').filter({ visible: true }).locator('[data-post-count="true"]')).toHaveText('129');
+  await expect(page.getByRole('tabpanel').filter({ visible: true }).locator('[data-verified-demo]')).toBeVisible();
+});
+
+test('Desktop pin releases on escape, skip, outside focus, resize and reduced motion', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name === 'mobile', 'Desktop scroll pin.');
+  await page.setViewportSize({ width: 1280, height: 550 });
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/');
+  const journey = page.locator('#produit');
+  await journey.scrollIntoViewIfNeeded();
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'true');
+  const scene = await page.locator('.journey-frame').boundingBox();
+  expect(scene!.y).toBeGreaterThanOrEqual(0);
+  expect(scene!.y + scene!.height).toBeLessThanOrEqual(550);
+  await page.keyboard.press('Escape');
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'false');
+  await expect(journey).toHaveAttribute('data-running', 'false');
+  await page.getByRole('button', { name: 'Lire le parcours' }).click();
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'true');
+  await page.getByRole('button', { name: 'Passer l’animation' }).click();
+  await expect(journey).toHaveAttribute('data-phase', 'published');
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'false');
+  await page.getByRole('button', { name: 'Rejouer le parcours' }).click();
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'true');
+  await page.locator('header a').first().focus();
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'false');
+  await page.getByRole('button', { name: 'Lire le parcours' }).click();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'false');
+  await expect(page.locator('html')).not.toHaveCSS('overflow', 'hidden');
+  await page.setViewportSize({ width: 1280, height: 650 });
+  await page.getByRole('button', { name: 'Lire le parcours' }).click();
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'true');
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await expect(journey).toHaveAttribute('data-scroll-locked', 'false');
+  await expect(journey).toHaveAttribute('data-phase', 'published');
+  await expect(page.locator('html')).not.toHaveCSS('overflow', 'hidden');
+});
+
+test('Petal colors rotate while visible, with a fixed symbol and a static reduced-motion alternative', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/');
+  const symbol = page.locator('header [data-tournesol-symbol]').first();
+  const colors = symbol.locator('.tournesol-petal-gradient');
+  await expect(symbol).toHaveAttribute('data-motion', 'true');
+  const before = await colors.evaluate(element => getComputedStyle(element).transform);
+  await expect.poll(() => colors.evaluate(element => getComputedStyle(element).transform)).not.toBe(before);
+  await expect(symbol.locator('img')).toHaveCSS('transform', 'none');
+  await page.locator('footer').scrollIntoViewIfNeeded();
+  await expect(symbol).toHaveAttribute('data-motion', 'false');
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.locator('header').scrollIntoViewIfNeeded();
+  await expect(symbol).toHaveAttribute('data-motion', 'false');
+  await expect(colors).toHaveCSS('animation-name', 'none');
+});

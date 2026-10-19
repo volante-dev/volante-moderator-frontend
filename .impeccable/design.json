@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T08:16:40Z",
+  "title": "Design System: Tournesol — site public",
+  "extensions": {
+    "colorMeta": {
+      "brand": {
+        "role": "primary",
+        "displayName": "Cobalt Tournesol",
+        "tonalRamp": [
+          "oklch(15.00% 0.19990 267.20)",
+          "oklch(26.43% 0.19990 267.20)",
+          "oklch(37.86% 0.19990 267.20)",
+          "oklch(49.29% 0.19990 267.20)",
+          "oklch(60.71% 0.19990 267.20)",
+          "oklch(72.14% 0.19990 267.20)",
+          "oklch(83.57% 0.19990 267.20)",
+          "oklch(95.00% 0.19990 267.20)"
+        ]
+      },
+      "brand-deep": {
+        "role": "primary",
+        "displayName": "Bleu nuit",
+        "tonalRamp": [
+          "oklch(15.00% 0.07129 265.42)",
+          "oklch(26.43% 0.07129 265.42)",
+          "oklch(37.86% 0.07129 265.42)",
+          "oklch(49.29% 0.07129 265.42)",
+          "oklch(60.71% 0.07129 265.42)",
+          "oklch(72.14% 0.07129 265.42)",
+          "oklch(83.57% 0.07129 265.42)",
+          "oklch(95.00% 0.07129 265.42)"
+        ]
+      },
+      "brand-light": {
+        "role": "primary",
+        "displayName": "Cobalt clair",
+        "tonalRamp": [
+          "oklch(15.00% 0.16971 269.53)",
+          "oklch(26.43% 0.16971 269.53)",
+          "oklch(37.86% 0.16971 269.53)",
+          "oklch(49.29% 0.16971 269.53)",
+          "oklch(60.71% 0.16971 269.53)",
+          "oklch(72.14% 0.16971 269.53)",
+          "oklch(83.57% 0.16971 269.53)",
+          "oklch(95.00% 0.16971 269.53)"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Orchidée électrique",
+        "tonalRamp": [
+          "oklch(15.00% 0.07067 319.68)",
+          "oklch(26.43% 0.12704 319.68)",
+          "oklch(37.86% 0.18197 319.68)",
+          "oklch(49.29% 0.23690 319.68)",
+          "oklch(60.71% 0.24733 319.68)",
+          "oklch(72.14% 0.22142 319.68)",
+          "oklch(83.57% 0.12720 319.68)",
+          "oklch(95.00% 0.03298 319.68)"
+        ]
+      },
+      "accent-hover": {
+        "role": "secondary",
+        "displayName": "Rose-violet au survol",
+        "tonalRamp": [
+          "oklch(15.00% 0.06917 318.60)",
+          "oklch(26.43% 0.12776 318.60)",
+          "oklch(37.86% 0.18300 318.60)",
+          "oklch(49.29% 0.23825 318.60)",
+          "oklch(60.71% 0.24210 318.60)",
+          "oklch(72.14% 0.21674 318.60)",
+          "oklch(83.57% 0.12451 318.60)",
+          "oklch(95.00% 0.03228 318.60)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papier froid",
+        "tonalRamp": [
+          "oklch(15.00% 0.00542 274.97)",
+          "oklch(26.43% 0.00542 274.97)",
+          "oklch(37.86% 0.00542 274.97)",
+          "oklch(49.29% 0.00542 274.97)",
+          "oklch(60.71% 0.00542 274.97)",
+          "oklch(72.14% 0.00542 274.97)",
+          "oklch(83.57% 0.00542 274.97)",
+          "oklch(95.00% 0.00542 274.97)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Blanc",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Encre nuit",
+        "tonalRamp": [
+          "oklch(15.00% 0.07129 265.42)",
+          "oklch(26.43% 0.07129 265.42)",
+          "oklch(37.86% 0.07129 265.42)",
+          "oklch(49.29% 0.07129 265.42)",
+          "oklch(60.71% 0.07129 265.42)",
+          "oklch(72.14% 0.07129 265.42)",
+          "oklch(83.57% 0.07129 265.42)",
+          "oklch(95.00% 0.07129 265.42)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Encre secondaire",
+        "tonalRamp": [
+          "oklch(15.00% 0.03922 264.93)",
+          "oklch(26.43% 0.03922 264.93)",
+          "oklch(37.86% 0.03922 264.93)",
+          "oklch(49.29% 0.03922 264.93)",
+          "oklch(60.71% 0.03922 264.93)",
+          "oklch(72.14% 0.03922 264.93)",
+          "oklch(83.57% 0.03922 264.93)",
+          "oklch(95.00% 0.03922 264.93)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Gris de séparation",
+        "tonalRamp": [
+          "oklch(15.00% 0.01720 267.78)",
+          "oklch(26.43% 0.01720 267.78)",
+          "oklch(37.86% 0.01720 267.78)",
+          "oklch(49.29% 0.01720 267.78)",
+          "oklch(60.71% 0.01720 267.78)",
+          "oklch(72.14% 0.01720 267.78)",
+          "oklch(83.57% 0.01720 267.78)",
+          "oklch(95.00% 0.01720 267.78)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Fond de champ",
+        "tonalRamp": [
+          "oklch(15.00% 0.00994 267.36)",
+          "oklch(26.43% 0.00994 267.36)",
+          "oklch(37.86% 0.00994 267.36)",
+          "oklch(49.29% 0.00994 267.36)",
+          "oklch(60.71% 0.00994 267.36)",
+          "oklch(72.14% 0.00994 267.36)",
+          "oklch(83.57% 0.00994 267.36)",
+          "oklch(95.00% 0.00994 267.36)"
+        ]
+      },
+      "error": {
+        "role": "semantic",
+        "displayName": "Erreur",
+        "tonalRamp": [
+          "oklch(15.00% 0.14325 28.22)",
+          "oklch(26.43% 0.14325 28.22)",
+          "oklch(37.86% 0.14325 28.22)",
+          "oklch(49.29% 0.14325 28.22)",
+          "oklch(60.71% 0.14325 28.22)",
+          "oklch(72.14% 0.14325 28.22)",
+          "oklch(83.57% 0.14325 28.22)",
+          "oklch(95.00% 0.14325 28.22)"
+        ]
+      },
+      "warning": {
+        "role": "semantic",
+        "displayName": "Avertissement",
+        "tonalRamp": [
+          "oklch(15.00% 0.07559 77.44)",
+          "oklch(26.43% 0.07559 77.44)",
+          "oklch(37.86% 0.07559 77.44)",
+          "oklch(49.29% 0.07559 77.44)",
+          "oklch(60.71% 0.07559 77.44)",
+          "oklch(72.14% 0.07559 77.44)",
+          "oklch(83.57% 0.07559 77.44)",
+          "oklch(95.00% 0.07559 77.44)"
+        ]
+      },
+      "inverse-muted": {
+        "role": "neutral",
+        "displayName": "Encre inverse atténuée",
+        "tonalRamp": [
+          "oklch(15.00% 0.03857 270.95)",
+          "oklch(26.43% 0.03857 270.95)",
+          "oklch(37.86% 0.03857 270.95)",
+          "oklch(49.29% 0.03857 270.95)",
+          "oklch(60.71% 0.03857 270.95)",
+          "oklch(72.14% 0.03857 270.95)",
+          "oklch(83.57% 0.03857 270.95)",
+          "oklch(95.00% 0.03857 270.95)"
+        ]
+      },
+      "phone": {
+        "role": "neutral",
+        "displayName": "Cadre mat",
+        "tonalRamp": [
+          "oklch(15.00% 0.01955 267.95)",
+          "oklch(26.43% 0.01955 267.95)",
+          "oklch(37.86% 0.01955 267.95)",
+          "oklch(49.29% 0.01955 267.95)",
+          "oklch(60.71% 0.01955 267.95)",
+          "oklch(72.14% 0.01955 267.95)",
+          "oklch(83.57% 0.01955 267.95)",
+          "oklch(95.00% 0.01955 267.95)"
+        ]
+      },
+      "instagram": {
+        "role": "neutral",
+        "displayName": "Encre native",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "native-line": {
+        "role": "neutral",
+        "displayName": "Gris natif clair",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "native-muted": {
+        "role": "neutral",
+        "displayName": "Gris natif secondaire",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "accent-light": {
+        "role": "secondary",
+        "displayName": "Rose-violet clair",
+        "tonalRamp": [
+          "oklch(15.00% 0.01551 317.41)",
+          "oklch(26.43% 0.03323 317.41)",
+          "oklch(37.86% 0.05095 317.41)",
+          "oklch(49.29% 0.05427 317.41)",
+          "oklch(60.71% 0.05427 317.41)",
+          "oklch(72.14% 0.04858 317.41)",
+          "oklch(83.57% 0.02791 317.41)",
+          "oklch(95.00% 0.00724 317.41)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display · h1",
+        "purpose": "Grand titre fluide. Demande 500, rendu 400 du kit Adobe accepté ; fontSynthesis:none."
+      },
+      "headline": {
+        "displayName": "Headline · h2",
+        "purpose": "Chapitres principaux ; même repli 500 vers 400."
+      },
+      "title": {
+        "displayName": "Title · h3",
+        "purpose": "Sous-ensembles et démonstrations."
+      },
+      "small-title": {
+        "displayName": "Small title · h4",
+        "purpose": "Étapes du parcours et panneau de commentaires."
+      },
+      "body": {
+        "displayName": "Body · body1",
+        "purpose": "Texte courant en Futura PT Regular."
+      },
+      "body-small": {
+        "displayName": "Body small · body2",
+        "purpose": "Texte secondaire compact."
+      },
+      "label": {
+        "displayName": "Label · button",
+        "purpose": "Actions en casse naturelle, sans espacement ajouté."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Légendes, états et mentions de démonstration."
+      }
+    },
+    "shadows": [
+      {
+        "name": "raised",
+        "value": "-12px -12px 22px rgba(255,255,255,.98), 12px 14px 24px rgba(41,55,88,.13)",
+        "purpose": "Surface mate sur le fond papier ; source theme/tokens.ts."
+      },
+      {
+        "name": "glass",
+        "value": "-8px -8px 24px rgba(255,255,255,.7), 16px 20px 42px rgba(23,38,75,.18)",
+        "purpose": "Surface verre et dialogue frosté ; source theme/tokens.ts."
+      },
+      {
+        "name": "phone",
+        "value": "10px 14px 24px rgba(24,36,62,.2), -2px -2px 3px rgba(255,255,255,.9)",
+        "purpose": "Cadre de PhonePreview uniquement."
+      }
+    ],
+    "motion": [
+      {
+        "name": "quick",
+        "value": "180ms",
+        "purpose": "Transition de fond et de couleur des boutons."
+      },
+      {
+        "name": "normal",
+        "value": "320ms",
+        "purpose": "Token de thème conservé (320ms) ; les séparateurs d’étapes utilisent localement 180ms ease."
+      },
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Courbe des transitions Tournesol."
+      },
+      {
+        "name": "journey-interpolation",
+        "value": "1 - (1 - clamp(value, 0, 1)) ** 3",
+        "purpose": "Interpolation cubique sortante du réarrangement du fil dans hooks/useProductJourney.ts, au sein de la séquence finie de 8.2s. Les transferts du média utilisent leur interpolation ease-in-out."
+      },
+      {
+        "name": "journey-lift",
+        "value": "ease-in-out cubique ; scale 1–1.07 ; élévation 0–12px",
+        "purpose": "Décollage avant les deux trajets du média, transfert entre 12 et 88% du segment, puis pose. Ombre portée bleu nuit jusqu’à 4px 14px 20px / .22, compensée selon l’échelle FLIP. Photo nette sans filtre de flou. Pause conservant la position et l’élévation ; étapes fixes et mouvement réduit sans effet."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "État final du parcours avec accès direct aux étapes ; aucun trajet ni blocage du défilement. Dégradé des pétales statique. Scroll immédiat et transitions globales ramenées à .01ms."
+      },
+      {
+        "name": "journey-duration",
+        "value": "8200ms",
+        "purpose": "Séquence requestAnimationFrame automatique une seule fois dès 900px en descendant lorsque le cadre atteint sa position de lecture centrée ou le décalage d’une ancre. Observation du canvas à 35%, sans déclenchement sur ce seuil seul. Lecture et reprise volontaires sur mobile, sans blocage du défilement ; pause, passage à la fin, relecture et étapes directes."
+      },
+      {
+        "name": "petal-color-rotation",
+        "value": "18000ms linear infinite",
+        "purpose": "Un tour du champ de couleur dans les pétales fixes, sans rotation de la silhouette ni du centre. Suspendu hors écran et dans un onglet masqué ; dégradé statique en mouvement réduit ou avec animated=false. Les icônes exportées restent statiques."
+      },
+      {
+        "name": "journey-scroll-lock",
+        "value": "min-width: 900px; pendant la lecture",
+        "purpose": "Cadre centré à au moins 16px du haut, défilement desktop temporairement bloqué. Libération à la fin, pause, passage à la fin, étape directe, Échap, focus hors du parcours, déplacement hors de la position retenue, sortie d’écran, onglet masqué, passage sous 900px ou mouvement réduit. Restaure les styles initiaux et leurs priorités CSS ; préserve le zoom navigateur. La scène s’ajuste aux écrans peu hauts avec une largeur maximale de calc((100svh - 140px) * 2.314)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "0px"
+      },
+      {
+        "name": "sm",
+        "value": "600px"
+      },
+      {
+        "name": "md",
+        "value": "900px"
+      },
+      {
+        "name": "lg",
+        "value": "1200px"
+      },
+      {
+        "name": "xl",
+        "value": "1536px"
+      }
+    ],
+    "gradients": [
+      {
+        "name": "petals",
+        "value": "conic-gradient(from 25deg, #3659D9, #5774E2 80deg, #E15EFF 170deg, #D659F7 250deg, #3659D9 360deg)",
+        "purpose": "Champ de couleur des seuls pétales : alpha du PNG original croisé avec l’extérieur du centre, silhouette et centre bleu nuit fixes. Source TournesolSymbol.tsx."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Action principale",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Transcription du dérivé ActionButton/MUI ; contrôles plats et focus visible.",
+      "html": "<button type=\"button\" class=\"ds-button-primary\">Se connecter</button>",
+      "css": ".ds-button-primary{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:64px;min-height:44px;padding:10px 22px;border:0;border-radius:4px;font-size:1rem;font-weight:400;line-height:1.75;text-transform:none;text-decoration:none;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color 180ms cubic-bezier(.16,1,.3,1),color 180ms cubic-bezier(.16,1,.3,1);background:var(--mui-palette-primary-main,#3659D9);color:var(--mui-palette-common-white,#FFFFFF);border:0;}.ds-button-primary:hover{background:var(--mui-palette-primary-dark,#17264B);box-shadow:none;}.ds-button-primary:focus-visible{outline:3px solid var(--mui-palette-primary-light,#5774E2);outline-offset:4px;}.ds-button-primary:active{box-shadow:none;}.ds-button-primary:disabled{cursor:default;color:rgba(0,0,0,.26);background:rgba(0,0,0,.12);}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none;}}"
+    },
+    {
+      "name": "Action rose-violet Tournesol",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "Transcription du dérivé ActionButton/MUI ; contrôles plats et focus visible.",
+      "html": "<button type=\"button\" class=\"ds-button-accent\">Ouvrir Tournesol</button>",
+      "css": ".ds-button-accent{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:64px;min-height:44px;padding:10px 22px;border:0;border-radius:4px;font-size:1rem;font-weight:400;line-height:1.75;text-transform:none;text-decoration:none;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color 180ms cubic-bezier(.16,1,.3,1),color 180ms cubic-bezier(.16,1,.3,1);background:var(--mui-palette-secondary-main,#E15EFF);color:var(--mui-palette-primary-dark,#17264B);border:0;}.ds-button-accent:hover{background:#D659F7;box-shadow:none;}.ds-button-accent:focus-visible{outline:3px solid var(--mui-palette-primary-light,#5774E2);outline-offset:4px;}.ds-button-accent:active{box-shadow:none;}.ds-button-accent:disabled{cursor:default;color:rgba(0,0,0,.26);background:rgba(0,0,0,.12);}@media(prefers-reduced-motion:reduce){.ds-button-accent{transition:none;}}"
+    },
+    {
+      "name": "Action secondaire",
+      "kind": "button",
+      "refersTo": "button-outlined",
+      "description": "Transcription du dérivé ActionButton/MUI ; contrôles plats et focus visible.",
+      "html": "<button type=\"button\" class=\"ds-button-outlined\">Revenir au brouillon</button>",
+      "css": ".ds-button-outlined{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:64px;min-height:44px;padding:10px 22px;border:0;border-radius:4px;font-size:1rem;font-weight:400;line-height:1.75;text-transform:none;text-decoration:none;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color 180ms cubic-bezier(.16,1,.3,1),color 180ms cubic-bezier(.16,1,.3,1);background:transparent;color:var(--mui-palette-primary-main,#3659D9);border:1px solid rgba(54,89,217,.5);}.ds-button-outlined:hover{background:rgba(54,89,217,.04);box-shadow:none;border-color:var(--mui-palette-primary-main,#3659D9);}.ds-button-outlined:focus-visible{outline:3px solid var(--mui-palette-primary-light,#5774E2);outline-offset:4px;}.ds-button-outlined:active{box-shadow:none;}.ds-button-outlined:disabled{cursor:default;color:rgba(0,0,0,.26);}@media(prefers-reduced-motion:reduce){.ds-button-outlined{transition:none;}}"
+    },
+    {
+      "name": "Action discrète",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Transcription du dérivé ActionButton/MUI ; contrôles plats et focus visible.",
+      "html": "<button type=\"button\" class=\"ds-button-text\">Découvrir le produit</button>",
+      "css": ".ds-button-text{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:64px;min-height:44px;padding:10px 22px;border:0;border-radius:4px;font-size:1rem;font-weight:400;line-height:1.75;text-transform:none;text-decoration:none;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color 180ms cubic-bezier(.16,1,.3,1),color 180ms cubic-bezier(.16,1,.3,1);background:transparent;color:var(--mui-palette-primary-main,#3659D9);border:0;}.ds-button-text:hover{background:rgba(54,89,217,.04);box-shadow:none;}.ds-button-text:focus-visible{outline:3px solid var(--mui-palette-primary-light,#5774E2);outline-offset:4px;}.ds-button-text:active{box-shadow:none;}.ds-button-text:disabled{cursor:default;color:rgba(0,0,0,.26);}@media(prefers-reduced-motion:reduce){.ds-button-text{transition:none;}}"
+    },
+    {
+      "name": "Champ de légende",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "TextField MUI du catalogue ; le champ illustré dans la scène produit n’est pas une saisie.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-caption\">Légende</label><input class=\"ds-field-input\" id=\"ds-caption\" value=\"Un nouvel espace pour créer.\" /></div>",
+      "css": ".ds-field{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;position:relative;display:inline-block;padding-top:6px;color:var(--mui-palette-text-primary,#17264B);}.ds-field-label{position:absolute;left:10px;top:0;padding:0 4px;background:var(--mui-palette-background-paper,#F5F6FA);font-size:.890625rem;color:var(--mui-palette-text-secondary,#59647B);}.ds-field-input{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;width:230px;max-width:100%;padding:16.5px 14px;border:1px solid var(--mui-palette-divider,#DCE1ED);border-radius:4px;background:#EBEEF5;color:var(--mui-palette-text-primary,#17264B);font-size:1.1875rem;line-height:1.4375;caret-color:var(--mui-palette-primary-main,#3659D9);}.ds-field-input:hover{border-color:var(--mui-palette-text-primary,#17264B);}.ds-field-input:focus{border-color:var(--mui-palette-primary-main,#3659D9);box-shadow:inset 0 0 0 1px var(--mui-palette-primary-main,#3659D9);}.ds-field-input:focus-visible{outline:3px solid var(--mui-palette-primary-main,#3659D9);outline-offset:4px;}.ds-field:focus-within .ds-field-label{color:var(--mui-palette-primary-main,#3659D9);}.ds-field-input:disabled{color:rgba(0,0,0,.38);border-color:rgba(0,0,0,.26);}.ds-field-input[aria-invalid=\"true\"]{border-color:var(--mui-palette-error-main,#A3382F);}.ds-field-input[aria-invalid=\"true\"]:focus{box-shadow:inset 0 0 0 1px var(--mui-palette-error-main,#A3382F);}"
+    },
+    {
+      "name": "Navigation publique",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Extrait desktop du SiteHeader : deux ancres et un accès à l’application. Le menu mobile réel reste un Menu MUI.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigation principale\"><a class=\"ds-nav-link\" href=\"#produit\">Le produit</a><a class=\"ds-nav-link\" href=\"#studio\">Studio Volante</a><a class=\"ds-nav-action\" href=\"https://moderator.vlnt.st\">Se connecter</a></nav>",
+      "css": ".ds-nav{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:flex;align-items:center;gap:36px;flex-wrap:wrap;}.ds-nav-link{font-size:15px;color:var(--mui-palette-text-primary,#17264B);text-decoration:none;text-underline-offset:.25em;}.ds-nav-link:hover{text-decoration:underline;}.ds-nav-link:focus-visible{outline:3px solid var(--mui-palette-primary-main,#3659D9);outline-offset:4px;}.ds-nav-action{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:64px;min-height:44px;padding:10px 22px;border:0;border-radius:4px;font-size:1rem;font-weight:400;line-height:1.75;text-transform:none;text-decoration:none;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color 180ms cubic-bezier(.16,1,.3,1),color 180ms cubic-bezier(.16,1,.3,1);font-size:15px;min-width:134px;background:var(--mui-palette-primary-main,#3659D9);color:var(--mui-palette-common-white,#FFFFFF);}.ds-nav-action:hover{background:var(--mui-palette-primary-dark,#17264B);}.ds-nav-action:focus-visible{outline:3px solid var(--mui-palette-primary-light,#5774E2);outline-offset:4px;}.ds-nav-action:active{box-shadow:none;}@media(prefers-reduced-motion:reduce){.ds-nav-action{transition:none;}}"
+    },
+    {
+      "name": "Surface relevée",
+      "kind": "card",
+      "refersTo": "surface-raised",
+      "description": "Surface/Paper sur le même fond papier, avec padding de 32px choisi par la story ; aucune réaction de survol.",
+      "html": "<div class=\"ds-surface-stage\"><article class=\"ds-surface\"><h3 class=\"ds-surface-title\">Une matière commune.</h3><p class=\"ds-surface-body\">Une hiérarchie lisible, des commandes plates.</p></article></div>",
+      "css": ".ds-surface-stage{padding:32px;background:var(--mui-palette-background-default,#F5F6FA);}.ds-surface{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;padding:32px;border-radius:16px;background:var(--mui-palette-background-paper,#F5F6FA);color:var(--mui-palette-text-primary,#17264B);box-shadow:-12px -12px 22px rgba(255,255,255,.98),12px 14px 24px rgba(41,55,88,.13);}.ds-surface-title{font-family:\"futura-pt\",\"Futura-Medium\",Futura,\"Helvetica Neue\",sans-serif;font-size:clamp(1.65rem,2.5vw,2.5rem);font-weight:500;line-height:1.15;letter-spacing:-.02em;margin:0;text-wrap:balance;}.ds-surface-body{font-size:1.1875rem;line-height:1.55;margin:16px 0 0;}"
+    },
+    {
+      "name": "Onglet sélectionné",
+      "kind": "custom",
+      "refersTo": "tab-selected",
+      "description": "Transcription visuelle d’un groupe MUI Tabs. Sans runtime, cet extrait ne reproduit pas les interactions ARIA des stories.",
+      "html": "<div class=\"ds-tabs\" aria-label=\"Exemple visuel des onglets\"><button class=\"ds-tab ds-tab-selected\" type=\"button\" aria-pressed=\"true\">Visibles · 3</button><button class=\"ds-tab\" type=\"button\" aria-pressed=\"false\">Masqués · 0</button></div>",
+      "css": ".ds-tabs{display:flex;min-height:48px;align-items:center;gap:0;}.ds-tab{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;min-width:90px;min-height:44px;padding:12px 16px;border:0;border-radius:4px;background:transparent;color:var(--mui-palette-text-secondary,#59647B);font-size:1rem;font-weight:400;line-height:1.25;text-transform:none;cursor:pointer;}.ds-tab-selected{background:var(--mui-palette-secondary-main,#E15EFF);color:var(--mui-palette-primary-dark,#17264B);}.ds-tab:focus-visible{outline:3px solid var(--mui-palette-primary-main,#3659D9);outline-offset:-3;}"
+    },
+    {
+      "name": "Dialogue frosté",
+      "kind": "custom",
+      "refersTo": "dialog",
+      "description": "Matière GlassDialog/MUI ; extrait statique. Focus trap, Échap et retour de focus appartiennent au composant React.",
+      "html": "<section class=\"ds-glass\" aria-labelledby=\"ds-glass-title\"><h2 id=\"ds-glass-title\" class=\"ds-glass-title\">Choisir un horaire</h2><p class=\"ds-glass-body\">Ceci est une démonstration du composant. Aucun contenu n’est programmé.</p></section>",
+      "css": ".ds-glass{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;max-width:600px;padding:24px;border-radius:12px;background:rgba(245,246,250,.88);color:var(--mui-palette-text-primary,#17264B);backdrop-filter:blur(24px) saturate(1.2);box-shadow:-8px -8px 24px rgba(255,255,255,.7),16px 20px 42px rgba(23,38,75,.18);}.ds-glass-title{font:500 28px/1.6 \"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;margin:0 0 20px;}.ds-glass-body{font-size:1.1875rem;line-height:1.55;margin:0;}@supports not(backdrop-filter:blur(1px)){.ds-glass{background:var(--mui-palette-background-paper,#F5F6FA);}}"
+    },
+    {
+      "name": "Accordéon d’information",
+      "kind": "custom",
+      "refersTo": "accordion",
+      "description": "Transcription autonome du style InfoAccordion. Le composant livré est MUI Accordion, avec sa sémantique et son clavier.",
+      "html": "<details class=\"ds-accordion\"><summary class=\"ds-accordion-summary\">Un brouillon reste un brouillon<svg class=\"ds-accordion-icon\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z\" fill=\"currentColor\"/></svg></summary><p class=\"ds-accordion-body\">Son enregistrement ne déclenche aucune publication.</p></details>",
+      "css": ".ds-accordion{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;max-width:700px;border:0;border-bottom:1px solid var(--mui-palette-divider,#DCE1ED);border-radius:0;background:transparent;color:var(--mui-palette-text-primary,#17264B);}.ds-accordion-summary{display:flex;align-items:center;justify-content:space-between;gap:16px;list-style:none;cursor:pointer;padding:24px 0;font-size:21px;line-height:1.55;}.ds-accordion-summary::-webkit-details-marker{display:none;}.ds-accordion-icon{flex-shrink:0;transition:transform 150ms cubic-bezier(.4,0,.2,1);}.ds-accordion[open] .ds-accordion-icon{transform:rotate(45deg);}.ds-accordion-summary:focus-visible{outline:3px solid var(--mui-palette-primary-main,#3659D9);outline-offset:4px;}.ds-accordion-body{max-width:70ch;margin:0;padding:0 0 24px;font-size:1.1875rem;line-height:1.55;color:var(--mui-palette-text-secondary,#59647B);}@media(min-width:900px){.ds-accordion-summary{font-size:24px;}}@media(prefers-reduced-motion:reduce){.ds-accordion-icon{transition:none;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Lumière Tournesol",
+    "overview": "Tournesol possède son propre système de design public. Le cobalt, le bleu nuit, le rose-violet et le papier froid soutiennent une présentation calme, ample et visuelle. Les photographies botaniques et le symbole floral aux pétales traversés par un dégradé cobalt et rose-violet donnent une présence reconnaissable au produit ; les grandes Futura en casse naturelle lui donnent sa voix.\n\nLa matière reste discrète : les panneaux émergent du fond commun par une lumière en haut et à gauche et une ombre souple en bas et à droite. Les commandes restent plates, les sélections sont lisibles et les dialogues utilisent un verre frosté. La préparation des contenus et la modération ont la même importance visuelle. Le mouvement accompagne la compréhension ; le contenu reste complet sans lui.",
+    "keyCharacteristics": [
+      "Un système Tournesol indépendant, sans dépendance au code du dépôt admin.",
+      "Fond et faces des panneaux de même couleur, relief externe doux.",
+      "Futura pour les titres et le corps ; repli de graisse documenté, sans faux gras.",
+      "Commandes plates, sélections rose-violet et focus visible.",
+      "Dégradé tournant dans les pétales fixes, centre bleu nuit immobile et variante statique.",
+      "Compositions de produit MUI, photographies et données explicitement démonstratives.",
+      "Même ThemeProvider dans Next.js et Storybook ; contenu accessible sans animation."
+    ],
+    "rules": [
+      {
+        "name": "The Shared Face Rule",
+        "body": "Le fond de page et les faces des panneaux relevés utilisent `paper`. Leur séparation vient du relief externe, pas d’un dégradé appliqué à la face.",
+        "section": "colors"
+      },
+      {
+        "name": "The Available Futura Rule",
+        "body": "Demander la graisse 500 pour les titres et conserver `fontSynthesis: none`. Tant que le kit ne fournit que 400 et 700, accepter le rendu 400 validé par l’utilisateur ; ne pas présenter ce repli comme une vraie fonte Medium chargée.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Control Rule",
+        "body": "Les boutons restent sans ombre au repos et au survol. Le relief appartient aux surfaces ; un focus visible ne doit pas être confondu avec une élévation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Fixed Flower Rule",
+        "body": "Animer la couleur des pétales, jamais la silhouette ni le centre du tournesol. Suspendre la rotation hors écran ou lorsque l’onglet est masqué ; conserver un dégradé statique en mouvement réduit ou avec `animated={false}`.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do réutiliser `theme/tokens.ts`, `theme/theme.ts` et les dérivés ou compositions MUI, avec le même ThemeProvider dans la page et Storybook.",
+      "Do conserver Futura, la casse naturelle et le repli 400 accepté pour la demande de titres 500, sans synthèse de graisse.",
+      "Do garder les faces relevées de la couleur du fond, avec leur lumière supérieure et gauche, et les commandes plates.",
+      "Do réserver les arrondis des dialogues et du téléphone à ces matières ; employer le rayon de contrôle pour les actions et sélections.",
+      "Do rendre les états de démonstration compréhensibles au clavier et sans animation, avec leurs libellés explicites.",
+      "Do conserver les pétales fixes au dégradé cobalt et rose-violet, le centre bleu nuit immobile, la signature « by volante » et la provenance des images publiées.",
+      "Do laisser interrompre le parcours desktop et restaurer le défilement ; garder le parcours mobile volontaire et sans blocage."
+    ],
+    "donts": [
+      "Don’t réintroduire Bebas ou les métriques de la maquette antérieure dans les titres du nouveau système Tournesol.",
+      "Don’t importer le thème, la navigation latérale, les compteurs ou les règles de l’admin comme autorité du site public.",
+      "Don’t remplacer MUI par un second système de composants visuels ni transformer les contrôles illustrés en faux boutons actifs.",
+      "Don’t étendre les halos locaux aux fonds des panneaux, aux textes ou aux boutons.",
+      "Don’t transformer les données de démonstration, les interactions locales ou une capture fixe en preuve d’accès Instagram réel, d’approbation Meta ou de lecture vidéo validée."
+    ]
+  }
+}

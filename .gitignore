@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Catalog and browser verification outputs
+/storybook-static/
+/test-results/
+/playwright-report/
+/.impeccable/build/
+/.impeccable/review/
+/.impeccable/source-scaffold.json
+
+# Duplicate scaffold created before this implementation
+/volante-moderator-frontend/

@@ -1,0 +1,10 @@
+Use case: precise-object-edit. Edit target: attached Tournesol sunflower symbol PNG. Change ONLY its brand colors: replace every yellow/gold petal with glacier cyan #5BE2ED, replace the green center with deep midnight cobalt #17264B. Keep the exact existing sunflower silhouette, petal count, proportions, center seed-dot geometry and white dots. Keep the flat professional logomark style, improve edge cleanliness without redesigning. No yellow, no green. No additional objects, no text, no ground shadow. Preserve a genuinely transparent alpha background and transparent gaps between petals. Square production logo asset, same generous tight framing.
+
+
+19 October 2026 — orchid revision, built-in image_gen
+Use case: precise-object-edit. Asset type: Tournesol production brand mark. Input image is the edit target. Recolor ONLY the cyan sunflower petals to a modern rose-violet orchid color, hex #D89AF2. Keep the exact current petal shape, count, arrangement, geometry, edge sharpness, proportions, subtle material, midnight navy circular center (#17264B), white seed dots and all negative space unchanged. Keep exactly the same centered composition, padding and image size. Flat professional brand mark. No new elements, no text, no glow, no yellow, no cyan. Preserve a genuinely transparent background and clean alpha edges.
+
+User follow-up: « pour le tournesol, fais un gradient rotatif sur ses pétales avec nos couleurs ».
+The app uses the generated raster alpha as the exact contour of a CSS mask, intersected with the outside of its circular center. A conic gradient of the production palette rotates inside that fixed mask. The navy center and white seeds stay unchanged. Static exports are captured from the same MUI TournesolSymbol story with reduced motion.
+
+19 October 2026 — vivid accent refinement. Source raster and alpha unchanged. The live MUI gradient now uses cobalt #3659D9, light cobalt #5774E2, electric orchid #E15EFF and hover orchid #D659F7. Static icon and social exports are rendered from the same Storybook components; no new generated image.

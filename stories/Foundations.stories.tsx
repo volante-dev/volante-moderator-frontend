@@ -1,0 +1,12 @@
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import { tokens } from '@/theme/tokens';
+
+const meta = { title: 'Fondations/Tournesol', parameters: { docs: { description: { component: 'Le design system de Tournesol est indépendant de Studio Volante. Source unique : theme/tokens.ts et theme/theme.ts. Titres Futura Medium 500 ; le kit Adobe actuel fournit 400/700, le navigateur utilise donc 400 en repli, conformément au choix utilisateur. Aucun faux gras. Le thème est partagé avec Next.js.' } } } } satisfies Meta;
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Palette: Story = { render: () => <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 3, maxWidth: 1000 }}>{Object.entries(tokens.color).filter(([name]) => !name.startsWith('native')).map(([name, value]) => <Box key={name}><Box sx={{ height: 100, bgcolor: value, borderRadius: '4px' }} /><Typography sx={{ mt: 1 }}>{name}</Typography><Typography variant="caption" color="text.secondary">{value}</Typography></Box>)}</Box> };
+export const Typographie: Story = { render: () => <Box sx={{ maxWidth: 1000 }}><Typography variant="h1" sx={{ mb: 4 }}>Du brouillon<br />à la publication.</Typography><Typography variant="h2" sx={{ mb: 3 }}>Vos échanges, au même endroit.</Typography><Typography variant="h3" sx={{ mb: 2 }}>Choisissez le moment.</Typography><Typography variant="h4" sx={{ mb: 2 }}>Un compte, vos décisions.</Typography><Typography sx={{ maxWidth: '65ch' }}>Préparez vos contenus, choisissez leur moment et gardez la main. Le corps Futura PT accompagne les titres sans ajouter une seconde voix au produit.</Typography><Typography variant="caption">Légende · données de démonstration</Typography></Box> };
+export const EspaceEtRayons: Story = { render: () => <Box sx={{ maxWidth: 800 }}><Typography variant="h2" sx={{ mb: 4 }}>Un rythme de 8.</Typography><Box sx={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>{Object.entries(tokens.radius).map(([name, value]) => <Box key={name}><Box sx={{ width: 120, height: 100, bgcolor: 'secondary.main', borderRadius: `${value}px` }} /><Typography>{name} · {value}px</Typography></Box>)}</Box><Typography sx={{ mt: 4 }}>Commandes plates : 4px. Surfaces en relief : 16px. Dialogues : 12px. Le cadre de téléphone utilise un rayon propre à sa représentation.</Typography></Box> };
