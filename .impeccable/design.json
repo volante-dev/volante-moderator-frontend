@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-19T08:16:40Z",
+  "generatedAt": "2026-10-19T11:55:55.535521+00:00",
   "title": "Design System: Tournesol — site public",
   "extensions": {
     "colorMeta": {
@@ -50,28 +50,28 @@
         "role": "secondary",
         "displayName": "Orchidée électrique",
         "tonalRamp": [
-          "oklch(15.00% 0.07067 319.68)",
-          "oklch(26.43% 0.12704 319.68)",
-          "oklch(37.86% 0.18197 319.68)",
-          "oklch(49.29% 0.23690 319.68)",
-          "oklch(60.71% 0.24733 319.68)",
-          "oklch(72.14% 0.22142 319.68)",
-          "oklch(83.57% 0.12720 319.68)",
-          "oklch(95.00% 0.03298 319.68)"
+          "oklch(15.00% 0.06000 173.12)",
+          "oklch(26.43% 0.08252 173.12)",
+          "oklch(37.86% 0.08252 173.12)",
+          "oklch(49.29% 0.08252 173.12)",
+          "oklch(60.71% 0.08252 173.12)",
+          "oklch(72.14% 0.08252 173.12)",
+          "oklch(83.57% 0.06572 173.12)",
+          "oklch(95.00% 0.02000 173.12)"
         ]
       },
       "accent-hover": {
         "role": "secondary",
-        "displayName": "Rose-violet au survol",
+        "displayName": "Vert d’eau au survol",
         "tonalRamp": [
-          "oklch(15.00% 0.06917 318.60)",
-          "oklch(26.43% 0.12776 318.60)",
-          "oklch(37.86% 0.18300 318.60)",
-          "oklch(49.29% 0.23825 318.60)",
-          "oklch(60.71% 0.24210 318.60)",
-          "oklch(72.14% 0.21674 318.60)",
-          "oklch(83.57% 0.12451 318.60)",
-          "oklch(95.00% 0.03228 318.60)"
+          "oklch(15.00% 0.06000 172.81)",
+          "oklch(26.43% 0.09114 172.81)",
+          "oklch(37.86% 0.09114 172.81)",
+          "oklch(49.29% 0.09114 172.81)",
+          "oklch(60.71% 0.09114 172.81)",
+          "oklch(72.14% 0.09114 172.81)",
+          "oklch(83.57% 0.06572 172.81)",
+          "oklch(95.00% 0.02000 172.81)"
         ]
       },
       "paper": {
@@ -258,16 +258,16 @@
       },
       "accent-light": {
         "role": "secondary",
-        "displayName": "Rose-violet clair",
+        "displayName": "Vert d’eau clair",
         "tonalRamp": [
-          "oklch(15.00% 0.01551 317.41)",
-          "oklch(26.43% 0.03323 317.41)",
-          "oklch(37.86% 0.05095 317.41)",
-          "oklch(49.29% 0.05427 317.41)",
-          "oklch(60.71% 0.05427 317.41)",
-          "oklch(72.14% 0.04858 317.41)",
-          "oklch(83.57% 0.02791 317.41)",
-          "oklch(95.00% 0.00724 317.41)"
+          "oklch(15.00% 0.02300 172.85)",
+          "oklch(26.43% 0.02300 172.85)",
+          "oklch(37.86% 0.02300 172.85)",
+          "oklch(49.29% 0.02300 172.85)",
+          "oklch(60.71% 0.02300 172.85)",
+          "oklch(72.14% 0.02300 172.85)",
+          "oklch(83.57% 0.02300 172.85)",
+          "oklch(95.00% 0.02000 172.85)"
         ]
       }
     },
@@ -394,7 +394,7 @@
     "gradients": [
       {
         "name": "petals",
-        "value": "conic-gradient(from 25deg, #3659D9, #5774E2 80deg, #E15EFF 170deg, #D659F7 250deg, #3659D9 360deg)",
+        "value": "conic-gradient(from 25deg, #3659D9, #5774E2 80deg, #8DD9C2 170deg, #72C7AE 250deg, #3659D9 360deg)",
         "purpose": "Champ de couleur des seuls pétales : alpha du PNG original croisé avec l’extérieur du centre, silhouette et centre bleu nuit fixes. Source TournesolSymbol.tsx."
       }
     ]
@@ -409,12 +409,12 @@
       "css": ".ds-button-primary{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:64px;min-height:44px;padding:10px 22px;border:0;border-radius:4px;font-size:1rem;font-weight:400;line-height:1.75;text-transform:none;text-decoration:none;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color 180ms cubic-bezier(.16,1,.3,1),color 180ms cubic-bezier(.16,1,.3,1);background:var(--mui-palette-primary-main,#3659D9);color:var(--mui-palette-common-white,#FFFFFF);border:0;}.ds-button-primary:hover{background:var(--mui-palette-primary-dark,#17264B);box-shadow:none;}.ds-button-primary:focus-visible{outline:3px solid var(--mui-palette-primary-light,#5774E2);outline-offset:4px;}.ds-button-primary:active{box-shadow:none;}.ds-button-primary:disabled{cursor:default;color:rgba(0,0,0,.26);background:rgba(0,0,0,.12);}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none;}}"
     },
     {
-      "name": "Action rose-violet Tournesol",
+      "name": "Action vert d’eau Tournesol",
       "kind": "button",
       "refersTo": "button-accent",
       "description": "Transcription du dérivé ActionButton/MUI ; contrôles plats et focus visible.",
       "html": "<button type=\"button\" class=\"ds-button-accent\">Ouvrir Tournesol</button>",
-      "css": ".ds-button-accent{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:64px;min-height:44px;padding:10px 22px;border:0;border-radius:4px;font-size:1rem;font-weight:400;line-height:1.75;text-transform:none;text-decoration:none;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color 180ms cubic-bezier(.16,1,.3,1),color 180ms cubic-bezier(.16,1,.3,1);background:var(--mui-palette-secondary-main,#E15EFF);color:var(--mui-palette-primary-dark,#17264B);border:0;}.ds-button-accent:hover{background:#D659F7;box-shadow:none;}.ds-button-accent:focus-visible{outline:3px solid var(--mui-palette-primary-light,#5774E2);outline-offset:4px;}.ds-button-accent:active{box-shadow:none;}.ds-button-accent:disabled{cursor:default;color:rgba(0,0,0,.26);background:rgba(0,0,0,.12);}@media(prefers-reduced-motion:reduce){.ds-button-accent{transition:none;}}"
+      "css": ".ds-button-accent{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:64px;min-height:44px;padding:10px 22px;border:0;border-radius:4px;font-size:1rem;font-weight:400;line-height:1.75;text-transform:none;text-decoration:none;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color 180ms cubic-bezier(.16,1,.3,1),color 180ms cubic-bezier(.16,1,.3,1);background:var(--mui-palette-secondary-main,#8DD9C2);color:var(--mui-palette-primary-dark,#17264B);border:0;}.ds-button-accent:hover{background:#72C7AE;box-shadow:none;}.ds-button-accent:focus-visible{outline:3px solid var(--mui-palette-primary-light,#5774E2);outline-offset:4px;}.ds-button-accent:active{box-shadow:none;}.ds-button-accent:disabled{cursor:default;color:rgba(0,0,0,.26);background:rgba(0,0,0,.12);}@media(prefers-reduced-motion:reduce){.ds-button-accent{transition:none;}}"
     },
     {
       "name": "Action secondaire",
@@ -462,7 +462,7 @@
       "refersTo": "tab-selected",
       "description": "Transcription visuelle d’un groupe MUI Tabs. Sans runtime, cet extrait ne reproduit pas les interactions ARIA des stories.",
       "html": "<div class=\"ds-tabs\" aria-label=\"Exemple visuel des onglets\"><button class=\"ds-tab ds-tab-selected\" type=\"button\" aria-pressed=\"true\">Visibles · 3</button><button class=\"ds-tab\" type=\"button\" aria-pressed=\"false\">Masqués · 0</button></div>",
-      "css": ".ds-tabs{display:flex;min-height:48px;align-items:center;gap:0;}.ds-tab{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;min-width:90px;min-height:44px;padding:12px 16px;border:0;border-radius:4px;background:transparent;color:var(--mui-palette-text-secondary,#59647B);font-size:1rem;font-weight:400;line-height:1.25;text-transform:none;cursor:pointer;}.ds-tab-selected{background:var(--mui-palette-secondary-main,#E15EFF);color:var(--mui-palette-primary-dark,#17264B);}.ds-tab:focus-visible{outline:3px solid var(--mui-palette-primary-main,#3659D9);outline-offset:-3;}"
+      "css": ".ds-tabs{display:flex;min-height:48px;align-items:center;gap:0;}.ds-tab{font-family:\"futura-pt\",\"Helvetica Neue\",Arial,sans-serif;font-synthesis:none;min-width:90px;min-height:44px;padding:12px 16px;border:0;border-radius:4px;background:transparent;color:var(--mui-palette-text-secondary,#59647B);font-size:1rem;font-weight:400;line-height:1.25;text-transform:none;cursor:pointer;}.ds-tab-selected{background:var(--mui-palette-secondary-main,#8DD9C2);color:var(--mui-palette-primary-dark,#17264B);}.ds-tab:focus-visible{outline:3px solid var(--mui-palette-primary-main,#3659D9);outline-offset:-3;}"
     },
     {
       "name": "Dialogue frosté",
@@ -483,12 +483,12 @@
   ],
   "narrative": {
     "northStar": "Lumière Tournesol",
-    "overview": "Tournesol possède son propre système de design public. Le cobalt, le bleu nuit, le rose-violet et le papier froid soutiennent une présentation calme, ample et visuelle. Les photographies botaniques et le symbole floral aux pétales traversés par un dégradé cobalt et rose-violet donnent une présence reconnaissable au produit ; les grandes Futura en casse naturelle lui donnent sa voix.\n\nLa matière reste discrète : les panneaux émergent du fond commun par une lumière en haut et à gauche et une ombre souple en bas et à droite. Les commandes restent plates, les sélections sont lisibles et les dialogues utilisent un verre frosté. La préparation des contenus et la modération ont la même importance visuelle. Le mouvement accompagne la compréhension ; le contenu reste complet sans lui.",
+    "overview": "Tournesol possède son propre système de design public. Le cobalt, le bleu nuit, le vert d’eau et le papier froid soutiennent une présentation calme, ample et visuelle. Les photographies botaniques et le symbole floral aux pétales traversés par un dégradé cobalt et vert d’eau donnent une présence reconnaissable au produit ; les grandes Futura en casse naturelle lui donnent sa voix.\n\nLa matière reste discrète : les panneaux émergent du fond commun par une lumière en haut et à gauche et une ombre souple en bas et à droite. Les commandes restent plates, les sélections sont lisibles et les dialogues utilisent un verre frosté. La préparation des contenus et la modération ont la même importance visuelle. Le mouvement accompagne la compréhension ; le contenu reste complet sans lui.",
     "keyCharacteristics": [
       "Un système Tournesol indépendant, sans dépendance au code du dépôt admin.",
       "Fond et faces des panneaux de même couleur, relief externe doux.",
       "Futura pour les titres et le corps ; repli de graisse documenté, sans faux gras.",
-      "Commandes plates, sélections rose-violet et focus visible.",
+      "Commandes plates, sélections vert d’eau et focus visible.",
       "Dégradé tournant dans les pétales fixes, centre bleu nuit immobile et variante statique.",
       "Compositions de produit MUI, photographies et données explicitement démonstratives.",
       "Même ThemeProvider dans Next.js et Storybook ; contenu accessible sans animation."
@@ -521,7 +521,7 @@
       "Do garder les faces relevées de la couleur du fond, avec leur lumière supérieure et gauche, et les commandes plates.",
       "Do réserver les arrondis des dialogues et du téléphone à ces matières ; employer le rayon de contrôle pour les actions et sélections.",
       "Do rendre les états de démonstration compréhensibles au clavier et sans animation, avec leurs libellés explicites.",
-      "Do conserver les pétales fixes au dégradé cobalt et rose-violet, le centre bleu nuit immobile, la signature « by volante » et la provenance des images publiées.",
+      "Do conserver les pétales fixes au dégradé cobalt et vert d’eau, le centre bleu nuit immobile, la signature « by volante » et la provenance des images publiées.",
       "Do laisser interrompre le parcours desktop et restaurer le défilement ; garder le parcours mobile volontaire et sans blocage."
     ],
     "donts": [

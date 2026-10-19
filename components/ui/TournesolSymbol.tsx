@@ -25,10 +25,10 @@ export function TournesolSymbol({ size = 52, animated = true }: { size?: number 
     '&[data-motion="true"] .tournesol-petal-gradient': { animationPlayState: 'running' },
     '@media (prefers-reduced-motion: reduce)': { '& .tournesol-petal-gradient': { animation: 'none' } },
   }}>
-    <Image src={sunflower} alt="" width={400} height={400} sizes="(max-width: 899px) 220px, 400px" style={{ display: 'block', width: '100%', height: '100%' }} />
+    <Image src={sunflower} alt="" width={400} height={400} sizes="(max-width: 899px) 220px, 400px" style={{ display: 'block', width: '100%', height: '100%', clipPath: 'ellipse(21.3% 21.2% at 50% 51.04%)' }} />
     <Box data-petal-mask sx={{ position: 'absolute', inset: 0, pointerEvents: 'none',
       // Intersect the original alpha with the outside of its circular center.
-      // The navy center and white seeds remain the unchanged image underneath.
+      // Only the original center is drawn underneath, preventing old petal colors at alpha edges.
       maskImage: `url("${sunflower.src}"), radial-gradient(ellipse 21.3% 21.2% at 50% 51.04%, transparent 99.5%, #000 100%)`,
       maskSize: '100% 100%', maskRepeat: 'no-repeat', maskComposite: 'intersect',
       WebkitMaskComposite: 'source-in',

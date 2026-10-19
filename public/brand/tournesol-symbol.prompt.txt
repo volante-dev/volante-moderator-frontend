@@ -8,3 +8,5 @@ User follow-up: « pour le tournesol, fais un gradient rotatif sur ses pétales 
 The app uses the generated raster alpha as the exact contour of a CSS mask, intersected with the outside of its circular center. A conic gradient of the production palette rotates inside that fixed mask. The navy center and white seeds stay unchanged. Static exports are captured from the same MUI TournesolSymbol story with reduced motion.
 
 19 October 2026 — vivid accent refinement. Source raster and alpha unchanged. The live MUI gradient now uses cobalt #3659D9, light cobalt #5774E2, electric orchid #E15EFF and hover orchid #D659F7. Static icon and social exports are rendered from the same Storybook components; no new generated image.
+
+19 October 2026 — seafoam revision, rendered from MUI/Storybook (no new generated raster). The unchanged alpha supplies the petal outline, the original image is clipped to its navy center to avoid pink edge bleed. The petal color field uses cobalt #3659D9, light cobalt #5774E2, seafoam #8DD9C2 and hover seafoam #72C7AE. Icons and social image are exports of the same components with reduced motion.

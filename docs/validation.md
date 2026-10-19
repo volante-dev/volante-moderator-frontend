@@ -1,5 +1,28 @@
 # Validation du site public — 19 octobre 2026
 
+## Vert d’eau — 19 octobre 2026
+
+- Accent #8DD9C2, clair #DFF3EC et survol #72C7AE dans le site et l’admin.
+  Contrastes avec l’encre bleu nuit : 9,07:1, 12,84:1 et 7,42:1.
+- Les tokens alimentent les composants MUI et la direction A de Storybook.
+  Icônes et Open Graph réexportés depuis les composants, provenance embarquée.
+  Le raster original ne dessine plus ses pétales sous le masque : pas de liseré rose.
+- Lint, génération des types et build Next.js réussis. La copie isolée ne pouvait
+  pas résoudre Next.js hors de sa racine Turbopack ; le build a donc été effectué
+  dans le dépôt installé, avec succès.
+- 38 stories rendues ; dialogue testé au clavier et avec axe. Les quatre tests
+  ciblés desktop/mobile passent : accessibilité, absence de débordement,
+  pétales animés et préférence de mouvement réduit.
+- Relecture visuelle locale de l’image sociale et des icônes, puis des vues admin
+  390/1440 px. Une assertion mobile attend maintenant la mise à jour responsive
+  avant de mesurer la largeur ; le contrôle passe sans changement de géométrie.
+- Une seule passe manuelle du détecteur : deux avis sur le noir d’un masque alpha.
+  Ce noir sert uniquement à l’opacité du masque ; ce n’est pas une couleur visible.
+  La documentation a été mise à jour dans le fil courant, sans revue indépendante.
+  Les contraintes typographiques et matérielles approuvées sont conservées.
+
+Les rapports ci-dessous restent des preuves des versions précédentes.
+
 ## Orchidée électrique — version préparée pour push
 
 - Accent #E15EFF, fond clair #F6DCFF, survol #D659F7, communs au site et à

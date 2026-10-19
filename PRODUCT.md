@@ -46,10 +46,9 @@ est la marque de l’opérateur WR EURL.
 
 Tournesol, avec la signature « by volante » et le symbole de tournesol transparent.
 Design system indépendant de Studio Volante, demandé le 18 octobre 2026. Le
-19 octobre, l’utilisateur choisit A Cobalt, retire le jaune puis remplace le cyan
-par un rose-violet moderne : cobalt #3659D9, bleu nuit #17264B, rose-violet
-#E15EFF et papier froid #F5F6FA forment l’identité actuelle, appliquée aussi à
-l’admin. Le clair #F6DCFF et le survol #D659F7 accompagnent cet accent. Chaque
+19 octobre, l’utilisateur choisit A Cobalt, retire le jaune, puis retient le vert d’eau après les essais cyan et rose : cobalt #3659D9, bleu nuit #17264B, vert d’eau
+#8DD9C2 et papier froid #F5F6FA forment l’identité actuelle, appliquée aussi à
+l’admin. Le clair #DFF3EC et le survol #72C7AE accompagnent cet accent. Chaque
 interface conserve sa typographie et sa composition approuvées.
 Les dégradés restent autorisés dans les traitements de marque. Celui des pétales
 tourne dans la silhouette originale fixe ; le centre bleu nuit reste immobile.
@@ -100,6 +99,6 @@ directes. Sur ordinateur, le défilement est retenu pendant sa lecture et libér
 Sa lecture sur mobile reste volontaire et sans blocage du défilement, avec un
 état final statique en mouvement réduit.
 
-Le 19 octobre, le dernier ajustement demandé renforce l’orchidée vers #E15EFF
+Le 19 octobre, le dernier ajustement demandé remplace le rose par le vert d’eau #8DD9C2
 dans les deux interfaces ; l’identité et les fonctions restent celles décrites
 ci-dessus. Les icônes et l’image sociale suivent cette palette.

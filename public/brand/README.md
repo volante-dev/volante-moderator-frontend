@@ -5,13 +5,12 @@ génération d’images puis recolorée le 19 octobre 2026. Les prompts successi
 sont dans `tournesol-symbol.prompt.txt` ; le PNG conserve sa provenance.
 
 Le composant `TournesolSymbol` utilise l’alpha du PNG pour masquer le dégradé
-cobalt et orchidée électrique. Seules les couleurs des pétales tournent ; le
+cobalt et vert d’eau. Seules les couleurs des pétales tournent ; le
 cœur bleu nuit et les points blancs restent fixes. Le mouvement réduit et les
 exports utilisent une version statique. Le PNG source reste une matière de
 construction du composant, distincte de l’icône exportée.
 
-La palette courante associe cobalt `#3659D9`, bleu nuit `#17264B`, orchidée
-électrique `#E15EFF` et papier froid `#F5F6FA`. Les tokens du thème en sont la
+La palette courante associe cobalt `#3659D9`, bleu nuit `#17264B`, vert d’eau `#8DD9C2` et papier froid `#F5F6FA`. Les tokens du thème en sont la
 source de vérité.
 
 Dans le site public, `components/ui/BrandLogo.tsx` compose le symbole et le nom

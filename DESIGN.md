@@ -5,9 +5,9 @@ colors:
   brand: "#3659D9"
   brand-deep: "#17264B"
   brand-light: "#5774E2"
-  accent: "#E15EFF"
-  accent-light: "#F6DCFF"
-  accent-hover: "#D659F7"
+  accent: "#8DD9C2"
+  accent-light: "#DFF3EC"
+  accent-hover: "#72C7AE"
   paper: "#F5F6FA"
   white: "#FFFFFF"
   ink: "#17264B"
@@ -156,7 +156,7 @@ components:
 
 **Creative North Star: "Lumière Tournesol"**
 
-Tournesol possède son propre système de design public. Le cobalt, le bleu nuit, le rose-violet et le papier froid soutiennent une présentation calme, ample et visuelle. Les photographies botaniques et le symbole floral aux pétales traversés par un dégradé cobalt et rose-violet donnent une présence reconnaissable au produit ; les grandes Futura en casse naturelle lui donnent sa voix.
+Tournesol possède son propre système de design public. Le cobalt, le bleu nuit, le vert d’eau et le papier froid soutiennent une présentation calme, ample et visuelle. Les photographies botaniques et le symbole floral aux pétales traversés par un dégradé cobalt et vert d’eau donnent une présence reconnaissable au produit ; les grandes Futura en casse naturelle lui donnent sa voix.
 
 La matière reste discrète : les panneaux émergent du fond commun par une lumière en haut et à gauche et une ombre souple en bas et à droite. Les commandes restent plates, les sélections sont lisibles et les dialogues utilisent un verre frosté. La préparation des contenus et la modération ont la même importance visuelle. Le mouvement accompagne la compréhension ; le contenu reste complet sans lui.
 
@@ -165,30 +165,30 @@ La matière reste discrète : les panneaux émergent du fond commun par une lumi
 - Un système Tournesol indépendant, sans dépendance au code du dépôt admin.
 - Fond et faces des panneaux de même couleur, relief externe doux.
 - Futura pour les titres et le corps ; repli de graisse documenté, sans faux gras.
-- Commandes plates, sélections rose-violet et focus visible.
+- Commandes plates, sélections vert d’eau et focus visible.
 - Dégradé tournant dans les pétales fixes, centre bleu nuit immobile et variante statique.
 - Compositions de produit MUI, photographies et données explicitement démonstratives.
 - Même ThemeProvider dans Next.js et Storybook ; contenu accessible sans animation.
 
-Le système public reste indépendant depuis la séparation approuvée le 18 octobre 2026. Le 19 octobre, le choix A Cobalt et le retrait de son jaune conduisent d’abord à une palette cobalt et cyan commune à l’admin. La révision approuvée ensuite remplace le cyan par le rose-violet et anime le dégradé des pétales ; la composition A et la typographie propres à chaque interface sont conservées. Les sources de vérité sont `theme/tokens.ts`, `theme/theme.ts`, `theme/ThemeProvider.tsx`, `app/globals.css`, les composants et leurs stories. Le domaine public est `https://tournesol.vlnt.st` ; les dépendances sont gérées avec npm. `PRODUCT.md` porte la vérité produit et `.impeccable/surfaces/app-page-tsx.md` la composition de la page. Les fichiers de `.impeccable/references/` sont des preuves historiques, pas l’autorité visuelle actuelle.
+Le système public reste indépendant depuis la séparation approuvée le 18 octobre 2026. Le 19 octobre, le choix A Cobalt et le retrait de son jaune conduisent d’abord à une palette cobalt et cyan commune à l’admin. La révision approuvée ensuite remplace le cyan par le vert d’eau et anime le dégradé des pétales ; la composition A et la typographie propres à chaque interface sont conservées. Les sources de vérité sont `theme/tokens.ts`, `theme/theme.ts`, `theme/ThemeProvider.tsx`, `app/globals.css`, les composants et leurs stories. Le domaine public est `https://tournesol.vlnt.st` ; les dépendances sont gérées avec npm. `PRODUCT.md` porte la vérité produit et `.impeccable/surfaces/app-page-tsx.md` la composition de la page. Les fichiers de `.impeccable/references/` sont des preuves historiques, pas l’autorité visuelle actuelle.
 
 La [revue du 19 octobre](.impeccable/review/oct19/finish-review.md) conclut `ship` sur la précédente démonstration et la palette cyan des deux interfaces. Ses vingt captures publiques et admin, les états du parcours et l’image Open Graph restent des preuves historiques. La [revue indépendante de la révision rose-violet](.impeccable/review/oct19-orchid/finish-review.md), des pétales animés et du défilement temporairement bloqué conclut également `ship` ; les nouvelles captures sont dans `.impeccable/review/oct19-orchid/`. Les tests ciblés passent sur le public (23 réussis, 3 ignorés dans Brave) et l’admin (2 réussis). La revue s’appuie sur le code, les captures et les mesures, sans inspection vidéo ni requalification des preuves historiques.
 
 ## Colors
 
-La palette associe un cobalt franc, un bleu nuit et un rose-violet lumineux à des neutres froids. Les valeurs normatives sont dans le frontmatter ; les noms ci-dessous décrivent leur usage. Les slugs documentaires `brand-deep`, `brand-light`, `accent-light`, `accent-hover` et `inverse-muted` correspondent aux tokens camelCase du thème.
+La palette associe un cobalt franc, un bleu nuit et un vert d’eau lumineux à des neutres froids. Les valeurs normatives sont dans le frontmatter ; les noms ci-dessous décrivent leur usage. Les slugs documentaires `brand-deep`, `brand-light`, `accent-light`, `accent-hover` et `inverse-muted` correspondent aux tokens camelCase du thème.
 
 ### Primary
 
 - **Cobalt Tournesol** (`brand`) : action principale, liens, progression active et focus global.
-- **Bleu nuit** (`brand-deep`) : grands titres, surface encre, texte sur rose-violet, centre fixe du symbole et survol du bouton principal.
+- **Bleu nuit** (`brand-deep`) : grands titres, surface encre, texte sur vert d’eau, centre fixe du symbole et survol du bouton principal.
 - **Cobalt clair** (`brand-light`) : contour de focus des boutons et barre de défilement.
 
 ### Secondary
 
-- **Rose-violet Tournesol** (`accent`) : bouton secondaire contenu, onglet et jour sélectionnés, sélection de texte et couleur du dégradé des pétales.
-- **Rose-violet clair** (`accent-light`) : teinte de fond disponible dans les fondations du système ; elle n’établit pas une nouvelle famille de surfaces dans la page.
-- **Rose-violet au survol** (`accent-hover`) : réponse du bouton contenu rose-violet et couleur du dégradé des pétales.
+- **Vert d’eau Tournesol** (`accent`) : bouton secondaire contenu, onglet et jour sélectionnés, sélection de texte et couleur du dégradé des pétales.
+- **Vert d’eau clair** (`accent-light`) : teinte de fond disponible dans les fondations du système ; elle n’établit pas une nouvelle famille de surfaces dans la page.
+- **Vert d’eau au survol** (`accent-hover`) : réponse du bouton contenu vert d’eau et couleur du dégradé des pétales.
 
 ### Neutral
 
@@ -204,7 +204,7 @@ Les couleurs sémantiques `error` et `warning` viennent du thème MUI. Elles ne 
 
 **The Shared Face Rule.** Le fond de page et les faces des panneaux relevés utilisent `paper`. Leur séparation vient du relief externe, pas d’un dégradé appliqué à la face.
 
-Les dégradés restent des traitements de marque autorisés : halos rose-violet et cobalt derrière la scène produit et le symbole du chapitre Studio, dégradé conique dans les seuls pétales. Les halos ne remplissent ni les panneaux, ni les textes, ni les actions ; les faces et commandes conservent leurs aplats. Les rampes OKLCH du sidecar sont synthétisées pour l’aperçu documentaire ; elles ne créent pas de nouvelles couleurs de production.
+Les dégradés restent des traitements de marque autorisés : halos vert d’eau et cobalt derrière la scène produit et le symbole du chapitre Studio, dégradé conique dans les seuls pétales. Les halos ne remplissent ni les panneaux, ni les textes, ni les actions ; les faces et commandes conservent leurs aplats. Les rampes OKLCH du sidecar sont synthétisées pour l’aperçu documentaire ; elles ne créent pas de nouvelles couleurs de production.
 
 ## Typography
 
@@ -273,7 +273,7 @@ Tous les composants visuels sont des dérivés ou des compositions de MUI. `them
 
 ### Buttons
 
-`ActionButton` est le dérivé unique de MUI Button. La variante par défaut est `contained`, avec élévation désactivée. Le bouton cobalt porte du texte blanc ; le bouton secondaire rose-violet porte du texte bleu nuit. `outlined` et `text` gardent le cobalt principal. La taille, les états `loading` et `disabled` et la sémantique de lien via `href` restent ceux de MUI. Les stories couvrent ces six états ou variantes.
+`ActionButton` est le dérivé unique de MUI Button. La variante par défaut est `contained`, avec élévation désactivée. Le bouton cobalt porte du texte blanc ; le bouton secondaire vert d’eau porte du texte bleu nuit. `outlined` et `text` gardent le cobalt principal. La taille, les états `loading` et `disabled` et la sémantique de lien via `href` restent ceux de MUI. Les stories couvrent ces six états ou variantes.
 
 Le focus du bouton utilise un contour cobalt clair de (3px), décalé de (4px). Les autres éléments focalisables reçoivent le cobalt principal. Les boutons restent plats au survol ; aucune translation de levée n’est ajoutée. Les variantes de taille et les usages locaux peuvent adapter le remplissage, comme les actions textuelles de la démo de modération.
 
@@ -289,7 +289,7 @@ Les champs sont des MUI TextField/OutlinedInput, présentés dans la story `Cham
 
 `SiteHeader` associe le symbole et la signature « by volante », deux liens d’ancrage et l’accès à l’application. Sur mobile, IconButton ouvre un Menu MUI avec les mêmes destinations. Il n’y a ni navigation latérale ni suivi automatique d’une rubrique active. Les liens ont un soulignement au survol ; le lien d’évitement apparaît au focus.
 
-Les onglets sont des MUI Tabs/Tab : groupe d’au moins (48px), onglets d’au moins (44px), indicateur linéaire supprimé, sélection en aplat rose-violet et texte bleu nuit. Leur focus est un contour cobalt de (3px), intégré par un décalage de (-3px). Les labels, identifiants et panneaux associés portent les relations ARIA ; le clavier suit MUI. Aucune famille de chips n’est utilisée par le site livré.
+Les onglets sont des MUI Tabs/Tab : groupe d’au moins (48px), onglets d’au moins (44px), indicateur linéaire supprimé, sélection en aplat vert d’eau et texte bleu nuit. Leur focus est un contour cobalt de (3px), intégré par un décalage de (-3px). Les labels, identifiants et panneaux associés portent les relations ARIA ; le clavier suit MUI. Aucune famille de chips n’est utilisée par le site livré.
 
 ### Frosted dialog
 
@@ -311,7 +311,7 @@ Le fil commence avec huit photographies existantes distinctes de la nouvelle ima
 
 ### Symbole Tournesol
 
-`TournesolSymbol` conserve la silhouette et le centre du PNG généré `public/brand/tournesol-symbol.png`, ainsi que sa transparence et son prompt exact dans `public/brand/tournesol-symbol.prompt.txt`. Son alpha est croisé avec un masque excluant le disque central : seul le champ de couleur conique tourne à l’intérieur des pétales fixes. Le bleu nuit du centre et ses graines blanches restent immobiles. Le dégradé traverse cobalt, cobalt clair, rose-violet et rose-violet au survol sur un tour linéaire de (18s).
+`TournesolSymbol` conserve la silhouette et le centre du PNG généré `public/brand/tournesol-symbol.png`, ainsi que sa transparence et son prompt exact dans `public/brand/tournesol-symbol.prompt.txt`. Son alpha est croisé avec un masque excluant le disque central : seul le champ de couleur conique tourne à l’intérieur des pétales fixes. Le bleu nuit du centre et ses graines blanches restent immobiles. Le dégradé traverse cobalt, cobalt clair, vert d’eau et vert d’eau au survol sur un tour linéaire de (18s).
 
 **The Fixed Flower Rule.** Animer la couleur des pétales, jamais la silhouette ni le centre du tournesol. Suspendre la rotation hors écran ou lorsque l’onglet est masqué ; conserver un dégradé statique en mouvement réduit ou avec `animated={false}`.
 
@@ -326,7 +326,7 @@ La marque du header et le symbole du chapitre Studio réutilisent ce composant. 
 - Do garder les faces relevées de la couleur du fond, avec leur lumière supérieure et gauche, et les commandes plates.
 - Do réserver les arrondis des dialogues et du téléphone à ces matières ; employer le rayon de contrôle pour les actions et sélections.
 - Do rendre les états de démonstration compréhensibles au clavier et sans animation, avec leurs libellés explicites.
-- Do conserver les pétales fixes au dégradé cobalt et rose-violet, le centre bleu nuit immobile, la signature « by volante » et la provenance des images publiées.
+- Do conserver les pétales fixes au dégradé cobalt et vert d’eau, le centre bleu nuit immobile, la signature « by volante » et la provenance des images publiées.
 - Do laisser interrompre le parcours desktop et restaurer le défilement ; garder le parcours mobile volontaire et sans blocage.
 
 ### Don't:
@@ -338,11 +338,21 @@ La marque du header et le symbole du chapitre Studio réutilisent ce composant. 
 - Don’t transformer les données de démonstration, les interactions locales ou une capture fixe en preuve d’accès Instagram réel, d’approbation Meta ou de lecture vidéo validée.
 
 
-### Accent renforcé — 19 octobre 2026
+### Étape historique : accent renforcé — 19 octobre 2026
 
-Le dernier retour utilisateur demande un violet rosé plus vif. L’accent courant
-est l’orchidée électrique #E15EFF, accompagné du fond #F6DCFF et du survol
+Le dernier retour utilisateur demande un violet rosé plus vif. L’accent de cette étape
+était l’orchidée électrique #E15EFF, accompagné du fond #F6DCFF et du survol
 #D659F7. Les contrastes avec le texte bleu nuit sont respectivement 5,12:1,
 11,73:1 et 4,69:1. Les revues cyan et orchidée pastel citées plus haut restent
 historiques. La revue de finition de cette retouche est conservée dans le dépôt
 public sous `.impeccable/review/oct19-electric/finish-review.md` (`ship`).
+
+### Vert d’eau — 19 octobre 2026
+
+À la demande de l’utilisateur, l’accent devient #8DD9C2, avec #DFF3EC
+pour le clair et #72C7AE au survol. Les contrastes avec l’encre #17264B
+sont respectivement 9,07:1, 12,84:1 et 7,42:1. Le cobalt, la typographie,
+les reliefs et les comportements restent identiques. Le raster source fournit
+le contour et le centre du symbole ; ses anciens pétales ne sont plus dessinés
+sous le masque, ce qui évite un liseré rose sur les bords transparents.
+Les preuves des étapes précédentes restent historiques.

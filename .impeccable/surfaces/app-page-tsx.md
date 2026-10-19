@@ -15,10 +15,10 @@ comprend qui l’exploite et peut rejoindre l’application. Site indépendant d
 THESIS: Un même contenu traverse le brouillon, le calendrier et la projection du
 profil ; l’expérience montre le produit plutôt qu’une grille de promesses.
 
-OWN-WORLD: Papier froid, cobalt, bleu nuit et rose-violet ; titres Futura Medium demandés
+OWN-WORLD: Papier froid, cobalt, bleu nuit et vert d’eau ; titres Futura Medium demandés
 avec repli 400 accepté, surfaces mates relevées en haut et à gauche, commandes
-plates, téléphone lisible. La palette A Cobalt avec l’accent rose-violet remplace
-les couleurs de la maquette initiale. Un dégradé cobalt et rose-violet tourne
+plates, téléphone lisible. La palette A Cobalt avec l’accent vert d’eau remplace
+les couleurs de la maquette initiale. Un dégradé cobalt et vert d’eau tourne
 dans les pétales fixes du symbole ; son centre bleu nuit reste immobile.
 
 STORY: Préparer, choisir un moment, visualiser son fil ; puis examiner les échanges,
@@ -97,8 +97,8 @@ Futura Medium pour les titres. Le kit Adobe contient seulement 400/700 ; son
 utilisation en repli est explicitement acceptée (« fais avec ce que tu as »).
 La maquette A reste la référence de composition. Le 19 octobre, l’utilisateur
 choisit A Cobalt puis demande de remplacer le jaune par un autre accent. La
-révision suivante remplace le cyan par le rose-violet #E15EFF, accompagné du
-clair #F6DCFF et du survol #D659F7 ; le cobalt #3659D9, le bleu nuit #17264B
+révision suivante remplace le cyan par le vert d’eau #8DD9C2, accompagné du
+clair #DFF3EC et du survol #72C7AE ; le cobalt #3659D9, le bleu nuit #17264B
 et le papier #F5F6FA restent inchangés. Les tokens de thème sont l’autorité
 courante. Le PNG original transparent et son prompt exact restent dans
 `public/brand/` ; `TournesolSymbol` définit le traitement animé de ses pétales.
@@ -127,3 +127,13 @@ est l’orchidée électrique #E15EFF, accompagné du fond #F6DCFF et du survol
 11,73:1 et 4,69:1. Les revues cyan et orchidée pastel citées plus haut restent
 historiques. La revue de finition de cette retouche est conservée dans le dépôt
 public sous `.impeccable/review/oct19-electric/finish-review.md` (`ship`).
+
+### Vert d’eau — 19 octobre 2026
+
+À la demande de l’utilisateur, l’accent devient #8DD9C2, avec #DFF3EC
+pour le clair et #72C7AE au survol. Les contrastes avec l’encre #17264B
+sont respectivement 9,07:1, 12,84:1 et 7,42:1. Le cobalt, la typographie,
+les reliefs et les comportements restent identiques. Le raster source fournit
+le contour et le centre du symbole ; ses anciens pétales ne sont plus dessinés
+sous le masque, ce qui évite un liseré rose sur les bords transparents.
+Les preuves des étapes précédentes restent historiques.

@@ -1,10 +1,10 @@
 export const tokens = {
   color: {
     paper: '#F5F6FA', white: '#FFFFFF', brand: '#3659D9', brandDeep: '#17264B',
-    brandLight: '#5774E2', accent: '#E15EFF', accentLight: '#F6DCFF',
+    brandLight: '#5774E2', accent: '#8DD9C2', accentLight: '#DFF3EC',
     ink: '#17264B', muted: '#59647B', line: '#DCE1ED', field: '#EBEEF5',
     error: '#A3382F', warning: '#6A4D1C', phone: '#222630', instagram: '#121212',
-    accentHover: '#D659F7', inverseMuted: '#CCD5F0', nativeLine: '#E3E3E3', nativeMuted: '#575757',
+    accentHover: '#72C7AE', inverseMuted: '#CCD5F0', nativeLine: '#E3E3E3', nativeMuted: '#575757',
   },
   font: {
     display: '"futura-pt", "Futura-Medium", Futura, "Helvetica Neue", sans-serif',
